@@ -1,0 +1,41 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <style src="style/main.css"></style> -->
+  <link rel="stylesheet" href="./resources/css/main.css">
+  <link rel="stylesheet" href="./resources/css/login.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/0dc56ed66a.js" crossorigin="anonymous"></script>
+  <title>CV app</title>
+</head>
+<!-- Login in Section -->
+<section class="login_div animate">
+  <h1 class="lock">
+    <i class="fa-solid fa-lock"></i>
+  </h1>
+  <h1 class="hide unlock">
+    <i class="fa-solid fa-unlock"></i>
+  </h1>
+  <input type="text" id="username_input" placeholder="Username" name="Username">
+  <input type="password" id="password_input" placeholder="Password" name="Password">
+  <button id="login" class="button">
+    Sign in
+  </button>
+</section>
+<!--End of Login in Section -->
+<div class="alert hide animate">
+  <div class="flex"><i class="fa-solid fa-circle-exclamation icon"></i>
+    <h4 id="alert_message">No Data found for this keyword.</h4>
+  </div>
+</div>
+
+<body>
+  <script src="./resources/script/user.js" type="module"></script>
+  <script src="./resources/script/global_functionalities.js" type="module"></script>
+</body>
+
+</html>

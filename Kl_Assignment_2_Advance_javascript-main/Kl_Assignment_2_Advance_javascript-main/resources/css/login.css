@@ -1,0 +1,48 @@
+.login_div {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 30rem;
+  height: 26rem;
+  padding: 30px;
+  backdrop-filter: blur(10px);
+  text-align: center;
+  box-shadow: 0 19px 38px rgba(10, 204, 13, 0.508);
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.login_div h1 {
+  margin: 15px 0;
+  text-transform: uppercase;
+  font-size: 4em;
+}
+
+.login_div input {
+  width: 400px;
+  border-radius: 10px;
+  height: 70px;
+  padding: 20px;
+  margin: 10px;
+  text-align: left;
+  font-size: 20px;
+  background-color: #f8f1f1;
+  color: #c166ef;
+  border: 2px solid #faf5f5;
+}
+
+.login_div .button {
+  background: #ec3636;
+  color: #ffffff;
+  width: 150px;
+  height: 70px;
+  border-radius: 10px;
+  margin: 10px;
+}
+.login_div .button:hover {
+  background: rgb(89, 230, 74);
+  font-size: 20px;
+}

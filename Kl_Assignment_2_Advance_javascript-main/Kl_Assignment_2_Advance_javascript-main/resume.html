@@ -1,0 +1,217 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <style src="style/main.css"></style> -->
+    <link rel="stylesheet" href="./resources/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/0dc56ed66a.js" crossorigin="anonymous"></script>
+    <title>CV app</title>
+</head>
+<section class="center-div">
+    <div class="color-div"></div>
+    <div class="search">
+        <input type="text" id="search_input" placeholder=" Search" name="search">
+        <button id="search" class="button">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        <button id="reset" class="button hide">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <button id="logout" class="button">Log out</button>
+    </div>
+    <div class="centent-div">
+        <div class="center">
+            <div class="profile-header">
+                <div class="name">
+                    <h1 id="name"></h1>
+                    <div class="flex">
+                        <h3>Applied For:&nbsp;</h3>
+                        <h3 id="role"></h3>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="left">
+                    <h3>Personal Information</h3>
+                    <div class="contact">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-phone icon"></i>
+                                <h4 id="phone_number"></h4>
+                                </i>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope icon"></i>
+                                <h4 id="email"></h4>
+                            </li>
+                            <li>
+                                <i class="fa-brands fa-linkedin icon"></i>
+                                <a href="" id="linkedin" target="_blank">Linkedin</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <h3>Skills</h3>
+                    <div class="contact">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-desktop icon"></i>
+                                <h4 id="skill_name">skill name</h4>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-star icon"></i>
+                                <h4 id="skill_level">skill Level</h4>
+                            </li>
+                            <li id="skills">Html, Css, Pytho</li>
+                        </ul>
+                    </div>
+
+                    <h3>Hobbies</h3>
+                    <div class="contact">
+                        <ul>
+                            <li id="hobbies">Html, Css, Pytho</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="right">
+                    <h1>Work Experience</h1>
+                    <div class="content_div">
+                        <div class="flex">
+                            <h3 class="bold">Company:&nbsp;</h3>
+                            <h3 id="work_company_name">Invideo.io</h3>
+                        </div>
+                        <div class="flex">
+                            <h4 class="bold">Designation:&nbsp;</h4>
+                            <h4 id="work_position">Lead - Design QA</h4>
+                        </div>
+
+                        <div class="flex">
+                            <h4 class="bold">From:&nbsp;</h4>
+                            <h4 id="working_start_date">1st October 2020 </h4>
+                            <h4 class="bold">&nbsp; To:&nbsp;</h4>
+                            <h4 id="working_end_date">1st October 2022</h4>
+                        </div>
+                        <div class="flex">
+                            <h4 class="bold">Summary:&nbsp;</h4>
+                            <h4 id="work_summary"></h4>
+                        </div>
+                    </div>
+
+                    <h1>Projects</h1>
+                    <div class="content_div">
+                        <h3 id="project_name">Invideo Web Editor</h3>
+                        <div class="flex">
+                            <h4 class="bold">Description:&nbsp;</h4>
+                            <h4 id="project_description"></h4>
+                        </div>
+
+                    </div>
+                    <h1>Education</h1>
+                    <div class="content_div">
+                        <table>
+                            <tr>
+                                <td class="title">
+                                    <h4 class="bold">UG:&nbsp;</h4>
+                                </td>
+                                <td class="description">
+                                    <h4 id="ug">Sai Vidya Institute of Technology, B.E Computer Science
+                                        and Engineering</h4>
+                                </td>
+                                <td class="gpa">
+                                    <div class="flex">
+                                        <h4 class="bold">GPA:&nbsp;</h4>
+                                        <h4 id="ug_gpa">8</h4>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h4 class="bold">Senior Secondary:&nbsp;</h4>
+                                </td>
+                                <td>
+                                    <h4 id="senior_secondary">
+                                        Sai Vidya Institute of Technology, B.E Computer Science
+                                        and Engineering
+                                    </h4>
+                                </td>
+                                <td>
+                                    <div class="flex">
+                                        <h4 class="bold">GPA:&nbsp;</h4>
+                                        <h4 id="senior_secondary_gpa">8</h4>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h4 class="bold">High School:&nbsp;</h4>
+                                </td>
+                                <td>
+                                    <h4 id="high_school">
+                                        Sai Vidya Institute of Technology, B.E Computer Science
+                                        and Engineering
+                                    </h4>
+                                </td>
+                                <td>
+                                    <div class="flex">
+                                        <h4 class="bold">GPA:&nbsp;</h4>
+                                        <h4 id="high_school_gpa">8</h4>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <h1>Internship</h1>
+                    <div class="content_div">
+                        <div class="flex">
+                            <h3 class="bold">Company:&nbsp;</h3>
+                            <h3 id="internship_company_name">Invideo.io</h3>
+                        </div>
+                        <div class="flex">
+                            <h4 class="bold">Designation:&nbsp;</h4>
+                            <h4 id="internship_position">Lead - Design QA</h4>
+                        </div>
+                        <div class="flex">
+                            <h4 class="bold">From:&nbsp;</h4>
+                            <h4 id="internship_start_date">1st October 2020 </h4>
+                            <h4 class="bold">&nbsp; To:&nbsp;</h4>
+                            <h4 id="internship_end_date">1st October 2022</h4>
+                        </div>
+                        <div class="flex">
+                            <h4 class="bold">Summary:&nbsp;</h4>
+                            <h4 id="internship_summary"></h4>
+                        </div>
+                    </div>
+                    <h1>Achievements</h1>
+                    <div class="content_div">
+                        <h4 id="achievements_summary"></h4>
+                    </div>
+                    <div class="empty"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="buttons">
+        <button id="previous" class="button animate">
+            <i class="fa-solid fa-angle-left"></i>
+        </button>
+        <button id="next" class="button animate">
+            <i class="fa-solid fa-angle-right"></i>
+        </button>
+    </div>
+</section>
+<div class="alert animate">
+    <div class="flex"><i class="fa-solid fa-circle-exclamation icon"></i>
+        <h4 id="alert_message">No Data found for this keyword.</h4>
+    </div>
+</div>
+
+<body>
+    <script src="./resources/script/script.js" type="module"></script>
+    <script src="./resources/script/global_functionalities.js" type="module"></script>
+</body>
+
+</html>
