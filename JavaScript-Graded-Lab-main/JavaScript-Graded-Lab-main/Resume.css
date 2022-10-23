@@ -1,0 +1,104 @@
+body{
+    text-align: center;
+}
+.out_container{
+    width:80%;
+    margin-left: 10%;
+    margin-top: 5px;
+    background-color: white;
+    text-align: center;
+/* 
+    visibility: hidden;
+    display: none; */
+}
+.out_container p{
+    margin: 0;
+}
+
+.img-div{
+    display: table-column;
+    width:50%;
+    background-color: aquamarine;
+    
+}
+.img-div img{
+    object-fit: cover;  
+}
+.notFound{
+    display: flex;
+    width: 50%;
+    height:30%;
+    align-items: center;
+    /* text-align: center; */
+    margin: auto;
+    border: 1pt;
+    border-style: solid;
+}
+.notFound img{
+    width: 30%;
+    margin-right: 20px;
+}
+.notFound p{
+    font-weight: bold;
+    font-size: larger;
+    display: flexbox;
+    color: crimson;
+}
+
+.mainContent{
+    display: flex;
+}
+.nameSpace{
+    background-color: aqua;
+    height:30%;
+    display: flex;
+}
+#nameId{
+    font-size: 150%;
+    font-weight: bold;
+   
+}
+.basicDetails{
+    /* display: flex; */
+    flex: 20%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.nameSpace img{
+    max-width:230px;
+    max-height:95px;
+    width: auto;
+    height: auto;
+    display: inline;
+    background-color: aqua;
+}
+#personaldetails{
+    /* width: 20%; */
+    text-align: center;
+    background-color: blanchedalmond;
+    height: fit-content;
+    overflow-wrap: break-word;
+    min-width: fit-content;
+}
+#professionaldetails{
+    width:80%;
+    /* text-align: center; */
+    text-align: left;
+    background-color: aliceblue;
+}
+#listSkills,#listHobbies{
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+.jobspan{
+    font-weight: bold;
+    justify-self: left;
+    margin-left: 30px;
+}
+.notFound{
+    visibility: hidden;
+    display: none;
+}

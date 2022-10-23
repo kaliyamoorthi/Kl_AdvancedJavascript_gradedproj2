@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Page</title>
+    <link rel="stylesheet" href="Resume.css">   
+</head>
+<!-- python -m http.server -->
+<body>
+    <div>
+    <button id="prev">Prev</button>
+    <input type="search" placeholder="Search using Keywords" id="searchEl">
+    <button id="next">Next</button>
+    </div>
+    <div class="notFound">
+        <!-- <div id="img-div"> -->
+        <img id="img" src="./sadimg.svg" alt="Sad Image">
+        <!-- </div> -->
+        <p id="nfPara">No such results found</p>
+
+    </div>
+    <div class="out_container">
+        <div class="nameSpace">
+            <div class="basicDetails">
+                <div id="nameId">JohnDoe</div>
+                <div id="appliedFor">Applied for:</div>
+            </div>
+                        
+            <img id="img" src="./person.jpg" alt="person Image">
+        </div>
+        <div class ="mainContent">
+           <div id="personaldetails">
+                <div>
+                    <h3>Personal Information</h3>
+                    <p id="contact"></p>
+                    <p id="email"></p>
+                    <a id ="profile" href=""></a>
+                </div>
+
+                <div>
+                    <h3>Technical Skills</h3>
+                    <ul id="listSkills"></ul>
+                </div>
+                <div>
+                    <h3>Hobbies</h3>
+                    <ul id="listHobbies"></ul>
+                </div>         
+           </div>
+           <div id="professionaldetails">
+            <div>
+                <h3>Work Experience in previous company</h3>
+                 <span class="jobspan" >Company Name:</span> <span id="company">date</span> <br>
+                 <span class="jobspan" >Position:</span> <span id="position">date</span> <br>
+                 <span class="jobspan">Start Date:</span> <span id="startdate">date</span> <br>
+                 <span class="jobspan"> End Date: </span> <span id="enddate">date</span> <br>
+                 <span class="jobspan">Summary:</span>
+                 <span style="display:inline-block ; margin-left: 30px; " id="jobdescription"></span>
+            </div>
+            <div>
+                <h3>Projects</h3>
+                <span class="jobspan" id="projectName"></span>
+                <span style="display:inline-block ; margin-left: 30px; " id="projdescription"></span>
+                
+            </div>
+            <div>
+                <h3>Education</h3>
+                <ul id="education">
+                    <li > <span class="jobspan" >UG:</span>  <span id="ug"></span></li>
+                    <li ><span class="jobspan" >PU:</span>  <span id="pu"></span></li>
+                    <li ><span class="jobspan">High School:</span>  <span id="highschool"></span></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Internship</h3>
+                <ul id="internship">
+                    <li > <span class="jobspan" >Company Name:</span>  <span id="company_in"></span></li>
+                    <li ><span class="jobspan" >Position:</span>  <span id="position_in"></span></li>
+                    <li ><span class="jobspan">Start Date:</span>  <span id="startdate_in"></span></li>
+                    <li ><span class="jobspan">End Date:</span>  <span id="enddate_in"></span></li> 
+                    <li ><span class="jobspan">Summary:</span>  <span id="summary_in"></span></li> 
+                    
+                </ul>
+            </div>
+            <div>
+               <h3>Achievements</h3>
+               <ul id="achievements"></ul>
+            </div>
+            
+           </div>
+        </div>
+    </div>
+    <!-- <script type="module" src="input.js"></script> -->
+    <!-- <script type="module" src="./input.js"></script> -->
+    <script type="module" src="resume.js"></script>
+</body>
+</html>

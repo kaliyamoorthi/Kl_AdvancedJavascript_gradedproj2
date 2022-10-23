@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Login</title>
+</head>
+<body>
+    <div>
+        <h1 id="h1">Sign in to view Resumes</h1>
+    </div>    
+    <div class="container">
+        <input type="text"  placeholder="Username" id="UserEl">
+        <br>
+        <input type="password" placeholder="Password" id="PassEl">
+        
+        <button type = "submit" id="Loginbtn" >Login</button>
+    </div>
+    <script>
+        let username= "username";
+        let password="password";
+        const userEl= document.getElementById("UserEl");
+        const passEl= document.getElementById("PassEl");
+
+        document.getElementById("Loginbtn").addEventListener("click",verify);
+        function verify(){
+            if(userEl.value==username && passEl.value==password){
+                // console.log(userEl.value);
+                // console.log(passEl.value);
+                /*Using replace to disable back button*/
+                window.location.replace("ResumePage.html");
+            }
+            else{
+                alert("Invalid credentials");
+            }
+        }
+    </script>  
+</body>
+</html>
